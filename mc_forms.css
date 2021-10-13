@@ -1,0 +1,98 @@
+
+/* Form Layout Styles */
+
+form {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+ 
+form > fieldset {
+    background-color: rgb(34, 3, 207);
+    border-radius: 20px;
+    -webkit-flex: 1 1 300px;
+    flex: 1 1 300px;
+    font-size: 0.85em;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+}
+ 
+div {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin: 7px 0px;
+}
+
+div#comment{
+    display: block;
+    margin: auto;
+}
+
+ 
+div > * {
+    -webkit-flex: 1 1 150px;
+    flex: 1 1 150px;
+}
+ 
+ 
+ /* Legend Styles */
+legend {
+    background-color: rgb(158, 130, 2);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+ 
+ 
+ /* Text Area Styles */
+textarea {
+    margin-top: 10px;
+    height: 100px;
+    width: 95%;
+}
+ 
+ 
+
+ 
+ 
+ /* Form Button Styles */
+div#buttons {
+    text-align: center;
+    width: 100%;
+}
+ 
+input[type="submit"], input[type='reset'] {
+    font-size: 1.2em;
+    padding: 5px;
+    margin: 15px;
+}
+ 
+ 
+ /* Validation Styles */
+input:focus, select:focus, textarea:focus {
+    background-color: rgb(220,255,220);
+}
+ 
+input#fName:focus:valid,
+input#lName:focus:valid,
+input#street:focus:valid,
+input#city:focus:valid,
+input#state:focus:valid,
+input#zip:focus:valid,
+input#phone:focus:valid {
+    background: rgb(220, 255, 220) url(mc_go.png) bottom right/contain no-repeat;
+}
+ 
+input#fName:focus:invalid,
+input#lName:focus:invalid,
+input#street:focus:invalid,
+input#city:focus:invalid,
+input#state:focus:invalid,
+input#zip:focus:invalid,
+input#phone:focus:invalid{
+    background: rgb(255, 232, 233) url(mc_stop.png) bottom right/contain no-repeat;
+}
