@@ -15,7 +15,7 @@ header {
     display: block;
 }
 
-header > nav a {
+header > nav ul a {
     background-color: rgb(85, 85, 85);
     display: block;
     float: left;
