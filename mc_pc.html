@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+      New Perspectives on HTML5 and CSS3, 7th Edition
+      Tutorial 7
+      Case Problem 1
+
+      CGIP Registration Form
+      Author: Sam L.
+      Date:   10/3
+
+      Filename:   cg_register.html
+
+   -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Millennium Computers</title>
+    <link rel="stylesheet" href="mc_styles.css" />
+    <link rel="stylesheet" href="mc_forms.css" />
+    <script src="mc_script.js"></script>
+
+</head>
+<header>
+    <img src="mc_logo.png" alt="Millenium Computers" />
+</header>
+
+<body>
+    <h1>Computer Order Form</h1>
+    <p>Required Items (*)</p>
+
+    <form action="http://www.mill_computers.com/orders/process.cgi" method="POST">
+
+        <fieldset>
+            <legend>Customer Information</legend>
+
+
+            <div>
+                <label for="fName">First Name*</lable>
+                    <input name="firstName" id="fName" type="text" required />
+            </div>
+
+            <div>
+
+                <label for="lName">Last Name*</label>
+                <input name="lastName" id="lName" type="text" required />
+            </div>
+
+            <div>
+
+                <label for="street">Street Address*</label>
+                <input name="strAdd" id="street" type="text" required />
+            </div>
+
+            <div>
+
+                <label for="city">City*</label>
+                <input name="city" id="city" type="text" required />
+            </div>
+
+            <div>
+
+                <label for="state">State*</label>
+                <input name="state" id="state" type="text" required />
+            </div>
+
+            <div>
+
+                <label for="zip">Zip Code*</label>
+                <input name="zip" id="zip" type="text" pattern="^\d{5}(-\d{4})?$"" required />
+        </div>
+
+        <div>
+
+            <label for=" phone">Phone Number</label>
+                <input name="phone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn"
+                    pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required />
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>Build Your Computer</legend>
+
+            <div>
+                <label for="pSpeed">Processor Speed</label>
+                <select name="processorSpeed" id="pSpeed" size="3">
+                    <option value="3.2">3.2 GHz</option>
+                    <option value="4.0">4.0 GHz</option>
+                    <option value="5.2">5.2 GHz</option>
+                </select>
+            </div>
+
+            <div>
+
+                <label for="mem">Memory</label>
+                <select name="memory" id="mem" size="4">
+                    <option value="1">1 GB</option>
+                    <option value="2">2 GB</option>
+                    <option value="3">3 GB</option>
+                    <option value="4">4 GB</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="monitor">Monitor Size</label>
+                <select name="monitor" id="monitor" size="4">
+                    <option value="15">15"</option>
+                    <option value="17">17"</option>
+                    <option value="19">19"</option>
+                    <option value="21">21"</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="hd">Hard Drive</label>
+                <select name="hardDrive" id="hd" size="4">
+                    <option value="240">240 GB</option>
+                    <option value="500">500 GB</option>
+                    <option value="750">750 GB</option>
+                    <option value="1">1 TB</option>
+                </select>
+            </div>
+
+            <div>
+                <label>DVD Burner</label>
+                <fieldset class="optGroup1">
+                    <label for="yes">Yes</label>
+                    <input name="dvd" id="yes" value="yes" type="radio" checked />
+                    <label for="no">No</label>
+                    <input name="dvd" id="no" value="no" type="radio" />
+                </fieldset>
+            </div>
+
+            <div>
+                <label>Tuner Card</label>
+                <fieldset class="optGroup2">
+                    <label for="yes">Yes</label>
+                    <input name="tuner" id="yes" value="yes" type="radio" checked />
+                    <label for="no">No</label>
+                    <input name="tuner" id="no" value="no" type="radio" />
+                </fieldset>
+            </div>
+
+            <div>
+                <label>Media Card Reader</label>
+                <fieldset class="optGroup3">
+                    <label for="yes">Yes</label>
+                    <input name="mcard" id="yes" value="yes" type="radio" checked />
+                    <label for="no">No</label>
+                    <input name="mcard" id="no" value="no" type="radio" />
+                </fieldset>
+            </div>
+            <div>
+                <label for="warranty">Would You Like a 24-month Extended Warranty?</label>
+                <fieldset class="warranty">
+                    <label for="yes">Yes</label>
+                    <input name="warr" id="yes" value="yes" type="radio" checked />
+                    <label for="no">No</label>
+                    <input name="warr" id="no" value="no" type="radio" />
+                </fieldset>
+
+
+        </fieldset>
+
+        <div id="comment">
+            <label for="comments">Customer Comments</label>
+            <textarea name="custComm" id="comments"></textarea>
+        </div>
+
+        <div id="buttons">
+            <input type="submit" value="Send Order" />
+            <input type="reset" value="Cancel Order" />
+            <input type="submit" value="Contact Me" />
+        </div>
+
+
+
+
+    </form>
+</body>
+
+
+
+
+
+
+
+</html>
