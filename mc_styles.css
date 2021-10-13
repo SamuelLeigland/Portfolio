@@ -1,0 +1,20 @@
+html {
+    background-color: rgb(10, 10, 10);
+}
+
+body {
+    width: 80%;
+    background-color: rgb(224, 224, 223);
+    margin: auto;
+}
+header > img {
+    width: 100%;
+}
+h1 {
+    margin-left: 35px;
+    
+}
+
+p {
+    margin-left: 50px;
+}
