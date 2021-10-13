@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 6
+
+   Tables Style Sheet
+   Author: Sam L.
+   Date:   9/22
+
+*/
+
+/* Table Styles */
+table#maxCap {
+    background: radial-gradient(ellipse at top, rgb(190,215,255) 0, black 100%);
+    border: 5px solid ivory;
+    border-collapse: collapse;
+    width: 15%;
+    float: left;
+    margin-right: 45px;
+}
+table#maxCap th, table#maxCap td {
+    border: 2px solid gray;
+}
+table#maxCap th {
+    background-color: black;
+    color: white;
+}
+table#maxCap tr {
+    height: 35px;
+    text-align: center;
+}
+table#maxCap td {
+    font-size: 0.9em;
+    color: white;
+}
+table#maxCap thead th:first-of-type {
+    background: maroon;
+}
+
+table#Tuesday {
+    background: radial-gradient(ellipse at top, rgb(190,215,255) 0, black 100%);
+    border: 5px solid ivory;
+    border-collapse: collapse;
+    width: 75%;
+    margin: auto;
+}
+table#Tuesday th, table#Tuesday td {
+    border: 2px solid gray;
+}
+table#Tuesday th {
+    background-color: black;
+    color: white;
+}
+table#Tuesday tr {
+    height: 35px;
+    text-align: center;
+}
+table#Tuesday td {
+    font-size: 0.9em;
+    color: white;
+}
+table#Tuesday thead th:first-of-type {
+    background: maroon;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 4
+
+   Hamilton Conference Center Style Sheet
+   Author: Sam L.
+   Date:  9/23
+
+   Filename:         hcc_styles.css
+   Supporting files: 
+
+*/
+html {
+   background: midnightblue;
+}
+body {
+   width: 95%;
+   background-color: rgb(151,151,151);
+   margin: auto;
+}
+body > header {
+   width: 100%;
+   height: 100px;
+   text-align: center;
+}
+
+header > nav.vertical li {
+   background: silver;
+   border: 1px solid black;
+   width: 10%;
+   width: 11.11%;
+   text-decoration: none;
+   list-style-type: none;
+   float: left;
+}
+/* @media only screen and (min-width: 641px) {
+   body {
+      -moz-column-count: 2;
+      column-count: 2;
+
+      -moz-column-gap: 20px;
+      -webkit-column-gap: 20px;
+      column-gap: 20px;
+
+      -moz-column-rule: 1px solid black;
+      -webkit-column-rule: 1px solid black;
+      column-rule: 1px solid black;
+   }
+} */
+
