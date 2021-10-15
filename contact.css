@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+
+
+fieldset {
+    width: 85%;
+    background-color: rgb(81, 81, 81);
+    margin: auto;
+    border-radius: 20px;
+    flex: 1 1 300px;
+    font-size: 0.85em;
+    padding: 10px;
+}
+
+legend {
+    background-color: salmon;
+    color: rgb(51, 51, 51)
+}
+
+div {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 7px 0px;
+}
+div > * {
+    flex: 1 1 150px;
+}
+
+textarea {
+    margin-top: 10px;
+    height: 100px;
+    width: 95%;
+}
