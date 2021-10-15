@@ -50,3 +50,20 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+nav#mainLink > a#navicon {
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    nav#mainLink > a#navicon {
+       display: block;
+    }
+    nav#mainLink ul {
+       display: none;
+    }
+ 
+    a#navicon:hover+ul, nav#mainLink ul:hover {
+       display: block;
+    }
+ }
