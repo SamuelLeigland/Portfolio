@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="contact.css" />
 
 </head>
 
@@ -23,7 +25,51 @@
             </ul>
         </nav>
     </header>
-    Contact Me
+    <form id="survey" action="http://www.example.com/redball/survey" method="POST">
+        <fieldset id="companyInfo">
+            <legend>Contact Me</legend>
+
+
+            <div>
+                <label for="name">Company*</label>
+                <input name="company" id="name" type="text" placeholder="Company Name" required />
+            </div>
+           
+            <div>
+                <label for="phone">Phone Number*</label>
+                <input name="compPhone" id="phone" type="text" placeholder="(123) 456-7890"
+                    pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required />
+            </div>
+            <div>
+                <label for="email">Email*</label>
+                <input name="compEmail" id="email" type="email" required />
+            </div>
+            <div class="formRow">
+                <label for="info">What would you label as the most valuable trait in an applicant?<br>(select all that apply)</label>
+                <select name="info" id="info" size="5" multiple>
+                    <option value="social">Social Skills</option>
+                    <option value="skills">Technical Skills</option>
+                    <option value="work">Work Ethic</option>
+                    <option value="experience">Experience</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <label for="interview">Would you like me to call for an interview?</label>
+            <input name="interview" id="interview" value="yes" type="checkbox" />
+
+            <br/>
+
+            <label for="questions">Do you have any questions for me?</label>
+            <textarea name="questions" id="questions"></textarea>
+
+        </fieldset>
+        
+        <div id="buttons">
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Cancel" />
+        </div>
+    </form>
 
 
 
@@ -40,10 +86,9 @@
 
 
 
-
-    
     <footer>
         Thank You for Your Time and Consideration
     </footer>
 </body>
+
 </html>
