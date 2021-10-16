@@ -12,6 +12,7 @@ section {
 article {
     flex: 1 1 300px;
     border: 1px solid black;
-    margin: auto;
+    margin: 15px;
     padding: 10px;
+    box-shadow: black 4px 4px 5px;
 }
