@@ -11,7 +11,8 @@ article {
     border: 1px solid black;
     background-color: rgb(82,82,82);
     padding: 10px;
-    margin: 7px
+    margin: 7px;
+    box-shadow: 4px 4px 6px;
 }
 
 article > img {
