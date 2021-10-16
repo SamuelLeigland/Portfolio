@@ -47,9 +47,10 @@ footer {
     text-align: center;
     border: 1px solid black;
     position: absolute;
-    bottom: 0;
     width: 100%;
+    clear: both;
 }
+
 
 nav#mainLink > a#navicon {
     display: none;
